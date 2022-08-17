@@ -11,6 +11,9 @@
 		F46EBB91289F74F400572A14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46EBB90289F74F400572A14 /* ContentView.swift */; };
 		F46EBB93289F74F500572A14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46EBB92289F74F500572A14 /* Assets.xcassets */; };
 		F46EBB96289F74F500572A14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46EBB95289F74F500572A14 /* Preview Assets.xcassets */; };
+		F46EBB9D289F753200572A14 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46EBB9C289F753200572A14 /* ButtonView.swift */; };
+		F46EBB9F289F754D00572A14 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46EBB9E289F754D00572A14 /* Dice.swift */; };
+		F46EBBA1289F756100572A14 /* GamePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46EBBA0289F756100572A14 /* GamePlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		F46EBB90289F74F400572A14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F46EBB92289F74F500572A14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F46EBB95289F74F500572A14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F46EBB9C289F753200572A14 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		F46EBB9E289F754D00572A14 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		F46EBBA0289F756100572A14 /* GamePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,14 @@
 		F46EBB8D289F74F400572A14 /* RMIT-Dice2 */ = {
 			isa = PBXGroup;
 			children = (
+				F46EBBA2289F756E00572A14 /* Sounds */,
 				F46EBB8E289F74F400572A14 /* RMIT_Dice2App.swift */,
 				F46EBB90289F74F400572A14 /* ContentView.swift */,
 				F46EBB92289F74F500572A14 /* Assets.xcassets */,
 				F46EBB94289F74F500572A14 /* Preview Content */,
+				F46EBB9C289F753200572A14 /* ButtonView.swift */,
+				F46EBB9E289F754D00572A14 /* Dice.swift */,
+				F46EBBA0289F756100572A14 /* GamePlay.swift */,
 			);
 			path = "RMIT-Dice2";
 			sourceTree = "<group>";
@@ -65,6 +75,13 @@
 				F46EBB95289F74F500572A14 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F46EBBA2289F756E00572A14 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46EBBA1289F756100572A14 /* GamePlay.swift in Sources */,
 				F46EBB91289F74F400572A14 /* ContentView.swift in Sources */,
 				F46EBB8F289F74F400572A14 /* RMIT_Dice2App.swift in Sources */,
+				F46EBB9F289F754D00572A14 /* Dice.swift in Sources */,
+				F46EBB9D289F753200572A14 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,10 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            Color.green
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                Image("rmit-casino-welcome-logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 350)
+                Spacer()
+                Dice()
+                Spacer()
+            }
+        }
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
