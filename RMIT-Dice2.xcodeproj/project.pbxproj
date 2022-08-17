@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F468BD5428AC82AA0053051A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F468BD5328AC82AA0053051A /* WelcomeView.swift */; };
+		F468BD5628AC83370053051A /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F468BD5528AC83370053051A /* LogoView.swift */; };
+		F468BD5828AC86AA0053051A /* GreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F468BD5728AC86AA0053051A /* GreetingView.swift */; };
+		F468BD5A28AC8A220053051A /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F468BD5928AC8A220053051A /* ScoreView.swift */; };
+		F468BD5C28AC96DB0053051A /* LoseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F468BD5B28AC96DB0053051A /* LoseView.swift */; };
 		F46EBB8F289F74F400572A14 /* RMIT_Dice2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46EBB8E289F74F400572A14 /* RMIT_Dice2App.swift */; };
 		F46EBB91289F74F400572A14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46EBB90289F74F400572A14 /* ContentView.swift */; };
 		F46EBB93289F74F500572A14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46EBB92289F74F500572A14 /* Assets.xcassets */; };
@@ -17,7 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F46EBB8B289F74F400572A14 /* RMIT-Dice2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RMIT-Dice2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F468BD5328AC82AA0053051A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F468BD5528AC83370053051A /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		F468BD5728AC86AA0053051A /* GreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
+		F468BD5928AC8A220053051A /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		F468BD5B28AC96DB0053051A /* LoseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseView.swift; sourceTree = "<group>"; };
+		F46EBB8B289F74F400572A14 /* RMIT-Dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RMIT-Dice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46EBB8E289F74F400572A14 /* RMIT_Dice2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMIT_Dice2App.swift; sourceTree = "<group>"; };
 		F46EBB90289F74F400572A14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F46EBB92289F74F500572A14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,7 +59,7 @@
 		F46EBB8C289F74F400572A14 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F46EBB8B289F74F400572A14 /* RMIT-Dice2.app */,
+				F46EBB8B289F74F400572A14 /* RMIT-Dice.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,11 +70,16 @@
 				F46EBBA2289F756E00572A14 /* Sounds */,
 				F46EBB8E289F74F400572A14 /* RMIT_Dice2App.swift */,
 				F46EBB90289F74F400572A14 /* ContentView.swift */,
-				F46EBB92289F74F500572A14 /* Assets.xcassets */,
-				F46EBB94289F74F500572A14 /* Preview Content */,
 				F46EBB9C289F753200572A14 /* ButtonView.swift */,
 				F46EBB9E289F754D00572A14 /* Dice.swift */,
+				F468BD5B28AC96DB0053051A /* LoseView.swift */,
 				F46EBBA0289F756100572A14 /* GamePlay.swift */,
+				F468BD5328AC82AA0053051A /* WelcomeView.swift */,
+				F468BD5728AC86AA0053051A /* GreetingView.swift */,
+				F468BD5928AC8A220053051A /* ScoreView.swift */,
+				F468BD5528AC83370053051A /* LogoView.swift */,
+				F46EBB92289F74F500572A14 /* Assets.xcassets */,
+				F46EBB94289F74F500572A14 /* Preview Content */,
 			);
 			path = "RMIT-Dice2";
 			sourceTree = "<group>";
@@ -101,7 +116,7 @@
 			);
 			name = "RMIT-Dice2";
 			productName = "RMIT-Dice2";
-			productReference = F46EBB8B289F74F400572A14 /* RMIT-Dice2.app */;
+			productReference = F46EBB8B289F74F400572A14 /* RMIT-Dice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -155,8 +170,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F46EBBA1289F756100572A14 /* GamePlay.swift in Sources */,
+				F468BD5428AC82AA0053051A /* WelcomeView.swift in Sources */,
+				F468BD5A28AC8A220053051A /* ScoreView.swift in Sources */,
+				F468BD5C28AC96DB0053051A /* LoseView.swift in Sources */,
 				F46EBB91289F74F400572A14 /* ContentView.swift in Sources */,
 				F46EBB8F289F74F400572A14 /* RMIT_Dice2App.swift in Sources */,
+				F468BD5628AC83370053051A /* LogoView.swift in Sources */,
+				F468BD5828AC86AA0053051A /* GreetingView.swift in Sources */,
 				F46EBB9F289F754D00572A14 /* Dice.swift in Sources */,
 				F46EBB9D289F753200572A14 /* ButtonView.swift in Sources */,
 			);
@@ -301,7 +321,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "vn.edu.rmit.alice.RMIT-Dice2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "RMIT-Dice";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,7 +350,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "vn.edu.rmit.alice.RMIT-Dice2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "RMIT-Dice";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

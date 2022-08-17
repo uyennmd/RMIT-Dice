@@ -11,7 +11,7 @@ import SwiftUI
 struct RMIT_Dice2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
         }
     }
 }

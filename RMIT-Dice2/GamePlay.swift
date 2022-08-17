@@ -50,12 +50,10 @@ func DiceRed (number: Int)-> String {
     }
 }
 
-func GamePlay (r1: Int, r2: Int, b1: Int, b2: Int) -> String {
+func GamePlay (r1: Int, r2: Int, b1: Int, b2: Int) -> Bool {
     if ((r1 + r2) < (b1 + b2)) {
-        return "You Won"
+        return true
     } else {
-        return "You Lose"
+        return false
     }
 }
-
-

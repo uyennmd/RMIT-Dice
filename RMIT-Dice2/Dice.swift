@@ -7,6 +7,8 @@
 import SwiftUI
 
 struct Dice: View {
+    @Binding var score: Int
+    @Binding var click: Bool
     @State var r1 = RandomDice()
     @State var r2 = RandomDice()
     @State var b1 = RandomDice()
@@ -34,16 +36,31 @@ struct Dice: View {
                 Image(DiceBlue(number:b2))
             }
             Spacer()
-            Text(GamePlay(r1:r1,r2:r2,b1:b1,b2:b2))
-                .foregroundColor(Color.orange)
-                .bold()
-                .font(Font.system(size: 50))
-            
+            if (click) {
+                if (GamePlay(r1:r1,r2:r2,b1:b1,b2:b2)) {
+                    Text("You Won!")
+                        .foregroundColor(Color.orange)
+                        .bold()
+                        .font(Font.system(size: 50))
+                } else {
+                    Text("You Lose!")
+                        .foregroundColor(Color.orange)
+                        .bold()
+                        .font(Font.system(size: 50))
+                }
+            }
             Button {
+                click = true
                 r1 = RandomDice()
                 r2 = RandomDice()
                 b1 = RandomDice()
                 b2 = RandomDice()
+                if (GamePlay(r1:r1,r2:r2,b1:b1,b2:b2)) {
+                    score += 10
+                } else {
+                    score -= 10
+                }
+                
             } label: {
                 ButtonView()
             }
@@ -55,6 +72,6 @@ struct Dice: View {
 
 struct Dice_Previews: PreviewProvider {
     static var previews: some View {
-        Dice()
+        Dice(score: .constant(10), click: .constant(false))
     }
 }
